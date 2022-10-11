@@ -423,7 +423,6 @@ a {
 
 .grid{
     display: grid;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -671,4 +670,23 @@ a {
 .block-plans .card{
     max-width: 500px;
     margin: 0 auto;
+}
+
+/*FEATURES*/
+
+.feature{
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+.feature img{
+    max-width: 700px;
+}
+.feature__heading{
+    margin: 1rem 0;
+}
+.feature__img{
+    width: 100%;
 }
