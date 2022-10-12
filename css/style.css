@@ -699,9 +699,7 @@ a {
 
 /*SHOWCASE*/
 
-.block--showcase__img {
-    width: 100%;
-}
+
 @media screen and (min-width: 768px) {
     .block--showcase .grid{
         grid-template-columns: 50% 50%;
@@ -711,12 +709,17 @@ a {
         max-width: 700px;
         justify-self: end;
     }
+    .block-showcase__image > img {
+        width: auto;
+        max-width: 700px;
+      }
 }
 
 /*FOOTER*/
 
 .footer{
     background: #232323;
+    padding-top: 10rem;
 }
 .footer a{
     color: #777;
@@ -737,6 +740,8 @@ a {
 .footer__heading{
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
 }
 .footer__brand{
     margin-top: 5rem;
@@ -781,6 +786,8 @@ a {
     .footer__heading{
         font-size: 1.6rem;
     }
-    
-
 }
+.callout-signup {
+    transform: translateY(5rem);
+  }
+  
