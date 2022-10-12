@@ -35,6 +35,7 @@ h2{
 }
 h3{
     font-size: 3rem;
+    font-weight: 500;
 }
 p{
     margin-top: 0;
@@ -115,7 +116,7 @@ a {
 .list{
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
+   
 }
 .list--inline .list__item{
     display: inline-block;
@@ -125,6 +126,7 @@ a {
 .list--tick{
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-headings);
 }
 .list--tick .list__item{
     padding-left: 0.5rem;
@@ -364,6 +366,7 @@ a {
 
 .media{
     display: flex;
+    margin-bottom: 4rem;
    }
 .media__tittle{
     margin-top: 0;
@@ -544,11 +547,11 @@ a {
     color: #fff;
 }
 .block--skewed-right{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
     padding-bottom: calc( var(--padding-vertical) + 4rem);
 }
 .block--skewed-left{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
     padding-bottom: calc( var(--padding-vertical) + 4rem);
 }
 .block__header{
@@ -558,6 +561,10 @@ a {
     max-width: 1140px;
     margin: 0 auto;
 }
+.block--dark h1, .block--dark h2, .block--dark h3 {
+     color: #fff;
+}
+   
 
 /*NAVIGATION BAR*/
 
@@ -616,10 +623,6 @@ a {
 
 /*HERO*/
 
-.hero{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-
-}
 .hero__tagline{
     font-size: 2rem;
     color: #b9c3cf;
@@ -689,4 +692,22 @@ a {
 }
 .feature__img{
     width: 100%;
+}
+
+/*SHOWCASE*/
+
+.block--showcase__img {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .block--showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .block--showcase__img{
+        width: auto;
+        max-width: 700px;
+        justify-self: end;
+    }
+
+    
 }
