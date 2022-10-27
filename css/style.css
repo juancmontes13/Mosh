@@ -566,7 +566,9 @@ a {
 .block--dark h1, .block--dark h2, .block--dark h3 {
      color: #fff;
 }
-   
+.block--showcase__img{
+    width: 100%;
+}
 
 /*NAVIGATION BAR*/
 
